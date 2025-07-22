@@ -3111,31 +3111,3 @@
 [Full] RMSE: 0.076868
 [Robust] RMSE (top 90%): 0.064665
 [LOG] 結果を保存中...
-Traceback (most recent call last):
-  File "/mnt/c/Users/potet/OneDrive/ドキュメント/pointcloud_registration_final/main.py", line 138, in <module>
-    main()
-  File "/mnt/c/Users/potet/OneDrive/ドキュメント/pointcloud_registration_final/main.py", line 126, in main
-    plot_rmse_history(
-  File "/mnt/c/Users/potet/OneDrive/ドキュメント/pointcloud_registration_final/src/pointcloud_registration/visualize.py", line 57, in plot_rmse_history
-    plt.savefig(save_path)
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/pyplot.py", line 1251, in savefig
-    res = fig.savefig(*args, **kwargs)  # type: ignore[func-returns-value]
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/figure.py", line 3490, in savefig
-    self.canvas.print_figure(fname, **kwargs)
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2184, in print_figure
-    result = print_method(
-             ^^^^^^^^^^^^^
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/backend_bases.py", line 2040, in <lambda>
-    print_method = functools.wraps(meth)(lambda *args, **kwargs: meth(
-                                                                 ^^^^^
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 481, in print_png
-    self._print_pil(filename_or_obj, "png", pil_kwargs, metadata)
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/backends/backend_agg.py", line 430, in _print_pil
-    mpl.image.imsave(
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/matplotlib/image.py", line 1657, in imsave
-    image.save(fname, **pil_kwargs)
-  File "/home/sotaro711/.cache/pypoetry/virtualenvs/pointcloud-registration-65o2X-80-py3.12/lib/python3.12/site-packages/PIL/Image.py", line 2583, in save
-    fp = builtins.open(filename, "w+b")
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'results_multistart/rmse_plot_multistart.png'
